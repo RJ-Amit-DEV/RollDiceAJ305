@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Task--1 Rolling a Die by RJ Amit</title>
+	<style>
+		*{font-size:50px ; text-align:center;}
+		img{height :300px ;width:auto;}
+		.btn{width:300px ; border-radius:30px;}
+		.btn:hover{color:white ; background-color:green;}
+		body{background-color:yellow;}
+	</style>
+	</head>
+    <body>
+    <h1> Rolling Die</h1>
+    <form onsubmit ="show()">
+	<input type ="submit"  value="Roll"  class="btn" />
+   </form>
+	
+	<img src="d1.png" id="image"></img>
+	
+<script>
+          function show()
+		  {
+		   event.preventDefault();
+		   let image =document.getElementById("image");
+		   let names =["d1.png","d2.png","d3.png","d4.png","d5.png","d6.png"]
+                   let r = parseInt(Math.random()* names.length);
+		   image.src =names[r];
+       		  }
+
+</script>
+
+<h3>🎮ROLL AND WIN💥</h3>
+
+    </body>
+</html>
